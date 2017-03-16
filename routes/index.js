@@ -8,8 +8,16 @@ module.exports = {
 
 function get (req, res) {
 
-      res.send("heloooooo")
+      res.render("index.hbs")
     // .catch(function (err) {
     //   res.status(500).send('DATABASE ERROR: ' + err.message)
     // })
 }
+
+// function home (req, res){
+//   var marketString = fs.readFileSync('./routes/seller.txt').toString()
+//   var marketData = JSON.parse(marketString)
+//   res.render('index', {
+//     marketData: marketData
+//   })
+// }

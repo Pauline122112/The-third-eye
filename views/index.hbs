@@ -2,12 +2,21 @@
 <html>
   <head>
     <title>EDA Phase 1 Express Boilerplate</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
   </head>
   <body>
-    <ul>
-    {{#each users}}
-      <li>{{name}} ({{email}})</li>
-    {{/each}}
-    </ul>
+    <h1>KAURI</h1>
+  <a href="/form">Go to form</a>
+
+  {{#each plannerData}}
+  <p>
+    Name: {{name}}<br>
+    Topic:  {{topic}}<br>
+    Date: {{date}}<br>
+    Contact:  {{contact}}<br>
+    Comment:  {{comment}}<br><br>
+
+  </p>
+  {{/each}}
   </body>
 </html>

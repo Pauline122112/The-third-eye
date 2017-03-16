@@ -1,0 +1,53 @@
+body {
+
+background-image: url("https://atouchofcountrymagic.com/wp-content/uploads/2016/04/rustic-background-for-website-qm7opvhk.jpg);
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.names {
+  color: black;
+  padding: 0px;
+  background-color: #94A7A6;
+}
+
+.submit {
+  color: black;
+  padding: 9px 15px 9px 15px;
+  background-color: #c5c4c4;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.submit:hover {
+  background-color: #a297b7;
+}
+
+a {
+  color: black;
+  padding: 9px 15px 9px 15px;
+  background-color: #c5c4c4;
+  border-radius: 10px;
+  border-width: 500px;
+  border-color: green;
+  font-weight: bold;
+}
+
+a:hover {
+  background-color: #a297b7;
+}
+
+img {
+  border-radius: 17px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 20px;
+}
