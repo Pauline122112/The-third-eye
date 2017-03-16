@@ -20,5 +20,7 @@ server.use(bodyParser.urlencoded({ extended: true }))
 // Routes
 
 server.get('/', index.get)
+server.get('/form', index.getForm)
+
 // app.get('/sellerForm', routes.form)
 // app.post('/sellerForm', routes.saveForm)
