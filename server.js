@@ -8,6 +8,8 @@ var index = require('./routes/index')
 
 var server = express()
 
+server.use(express.static('public'))
+
 module.exports = server
 
 // Middleware

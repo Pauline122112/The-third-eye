@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>EDA Phase 1 Express Boilerplate</title>
-        <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Kauri Styles</title>
+            <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <h1>KAURI</h1>
-  <a href="/form">Seller</a>
-  <a href="/form">Buyer</a>
-  <a href="/form">Sign in</a>
+    <div id='pageContainer'>
+      <h1>KAURI</h1>
+    <a href="/form">Seller</a>
+    <a href="/form">Buyer</a>
+    <a href="/form">Sign in</a>
 
-  {{#each plannerData}}
-  <p>
-    Name: {{name}}<br>
-    Topic:  {{topic}}<br>
-    Date: {{date}}<br>
-    Contact:  {{contact}}<br>
-    Comment:  {{comment}}<br><br>
+    {{#each plannerData}}
+    <p>
+      Name: {{name}}<br>
+      Topic:  {{topic}}<br>
+      Date: {{date}}<br>
+      Contact:  {{contact}}<br>
+      Comment:  {{comment}}<br><br>
 
-  </p>
-  {{/each}}
+    </p>
+    {{/each}}
+</div>
   </body>
 </html>
