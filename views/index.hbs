@@ -2,14 +2,17 @@
 <html>
   <head>
     <title>Kauri Styles</title>
-            <link href="style.css" rel="stylesheet" type="text/css">
+
+    <link href="style.css" rel="stylesheet" type="text/css">
+
   </head>
+
     <body>
 
       <div id='pageContainer'>
         <ul>
           <h1>KAURI</h1>
-          <li><a href="#" class="btn btn-info btn-lg">
+          <li><a href="/form" class="btn btn-info btn-lg">
             <span class="glyphicon glyphicon-shopping-cart"></span>Trolley</a>
         <li><a href="/form">Sign in</a></li>
         <li><a href="/form">New Seller</a></li>
@@ -19,6 +22,65 @@
       </div><br><br>
     <form>
       <input type= 'text' name='search' placeholder="Search..">
+
+      <!-- Making a slideshow carousel -->
+
+      <br><br><div class="slideshow-container"><br><br>
+
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="../images/image1.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src ="../images/fish-chips-bf.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src ="../images/nzquilt.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div><br><br>
+<!-- go to css to add in functionality to button -->
+<br><br><script>
+var slideIndex = 0;
+showSlides();
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+
+</script>
 
   </body>
 </html>
