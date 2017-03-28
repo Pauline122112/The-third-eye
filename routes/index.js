@@ -11,8 +11,9 @@ module.exports = {
 }
 
 function get (req, res) {
-
-      res.render("index.hbs")
+  // var data = db.get...
+  // res.render('index', data)
+  res.render("index", {k: 'KAURII'})
 }
 
 function getForm (req, res) {
